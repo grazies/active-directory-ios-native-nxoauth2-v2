@@ -19,7 +19,6 @@
 		B85B44041B0E5C45006CEFC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85B44031B0E5C45006CEFC8 /* Images.xcassets */; };
 		B85B44071B0E5C45006CEFC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B85B44051B0E5C45006CEFC8 /* LaunchScreen.xib */; };
 		B8878C151B0FED8800BAFF6C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B8878C141B0FED8800BAFF6C /* User.m */; };
-		B9C3DEA7EE4D662C5581B867 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A311A42C3413097EBA882893 /* libPods.a */; };
 		FB923FFF1C7E98AF0058B0A8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB923FFE1C7E98AF0058B0A8 /* LoginViewController.m */; };
 		FB99EBD91D1B1F83007C8BBC /* graphAPICaller.m in Sources */ = {isa = PBXBuildFile; fileRef = FB99EBD81D1B1F83007C8BBC /* graphAPICaller.m */; };
 		FBE25AFB1C80C7040080AF1F /* NSURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE25AFA1C80C7040080AF1F /* NSURLResponse.m */; };
@@ -69,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C3DEA7EE4D662C5581B867 /* libPods.a in Frameworks */,
 				12A734D5CC710835470F5EB1 /* libPods-QuickStart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

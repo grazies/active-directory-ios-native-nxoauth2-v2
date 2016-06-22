@@ -7,7 +7,6 @@
 //
 
 #import "AppData.h"
-#import "ADALiOS/ADAuthenticationResult.h"
 
 @implementation AppData
 
@@ -24,7 +23,7 @@
         instance.authority = [dictionary objectForKey:@"authority"];
         instance.resourceId = [dictionary objectForKey:@"resourceString"];
         instance.redirectUriString = [dictionary objectForKey:@"redirectUri"];
-        instance.taskWebApiUrlString = [dictionary objectForKey:@"graphAPI"];
+        instance.graphApiUrlString = [dictionary objectForKey:@"graphAPI"];
         instance.apiversion = [dictionary objectForKey:@"api-version"];
         instance.tenant = [dictionary objectForKey:@"tenant"];
         instance.secret = [dictionary objectForKey:@"secret"];

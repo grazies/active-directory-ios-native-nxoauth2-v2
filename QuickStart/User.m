@@ -13,11 +13,14 @@
 @synthesize upn;
 @synthesize name;
 
-+ (id)NameOfUpn:(NSString *)upn name:(NSString *)name
++ (id)NameOfUpn:(NSString *)upn name:(NSString *)name mail:(NSString *)mail mobilePhones:(NSString *)mobile businessPhones:(NSString *)business
 {
     User *newUser = [[self alloc] init];
     newUser.name = name;
     newUser.upn = upn;
+    newUser.mail = mail;
+    newUser.mobilePhones = mobile;
+    newUser.businessPhones = business;
     return newUser;
 }
 

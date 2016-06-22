@@ -79,32 +79,6 @@
 
 #pragma mark - Segues
 
-- (void)requestOAuth2ProtectedDetails {
-    
-    AppData* data = [AppData getInstance];
-    NXOAuth2AccountStore *store = [NXOAuth2AccountStore sharedStore];
-    NSArray *accounts = [store accountsWithAccountType:@"myGraphService"];
-    [NXOAuth2Request performMethod:@"GET"
-                        onResource:[NSURL URLWithString:data.taskWebApiUrlString]
-                   usingParameters:nil
-                       withAccount:accounts[0]
-               sendProgressHandler:^(unsigned long long bytesSend, unsigned long long bytesTotal) {
-                   // e.g., update a progress indicator
-               }
-                   responseHandler:^(NSURLResponse *response, NSData *responseData, NSError *error) {
-                       // Process the response
-                       if (responseData) {
-                           NSError *error;
-                           NSDictionary *userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&error];
-                           NSLog(@"%@", userInfo);
-                       }
-                       if (error) {
-                           NSLog(@"%@", error.localizedDescription);
-                       }
-                   }
-     ];
-}
-
 
 #pragma mark - Table View
 
@@ -130,7 +104,7 @@
 
     
     // Configure the cell
-    cell.textLabel.text = user.upn;
+    cell.textLabel.text = user.name;
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
     return cell;
@@ -144,13 +118,8 @@
 
 -(void)lookupInGraph:(NSString *)searchText {
 if (searchText.length > 0) {
-    
-    
-   // [self requestOAuth2ProtectedDetails];
         
     };
-    
-    NSString *graphURL = [NSString stringWithFormat:@"%@%@/users?api-version=%@&$filter=startswith(userPrincipalName, '%@')", data.taskWebApiUrlString, data.tenant, data.apiversion, searchString];
     
 
     

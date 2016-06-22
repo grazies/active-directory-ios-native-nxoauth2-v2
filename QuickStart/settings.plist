@@ -13,7 +13,7 @@
 	<key>graphAPI</key>
 	<string>https://graph.microsoft.com/</string>
 	<key>api-version</key>
-	<string>1.6</string>
+	<string>v1.0</string>
 	<key>tenant</key>
 	<string>kidventus.com</string>
 	<key>secret</key>

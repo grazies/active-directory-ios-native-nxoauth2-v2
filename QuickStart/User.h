@@ -7,6 +7,9 @@
 
 @property (nonatomic, copy) NSString *upn;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *mail;
+@property (nonatomic, copy) NSString *businessPhones;
+@property (nonatomic, copy) NSString *mobilePhones;
 
 + (id)NameOfUpn:(NSString*)upn name:(NSString*)name;
 

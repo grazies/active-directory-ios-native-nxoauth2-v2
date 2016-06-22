@@ -7,13 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ADALiOS/ADAuthenticationResult.h"
-
 
 @interface AppData : NSObject
 
-@property (strong) ADTokenCacheStoreItem *userItem;
-@property (strong) NSString* taskWebApiUrlString;
+@property (strong) NSString* graphApiUrlString;
 @property (strong) NSString* authority;
 @property (strong) NSString* clientId;
 @property (strong) NSString* resourceId;

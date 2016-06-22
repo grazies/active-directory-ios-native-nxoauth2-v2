@@ -17,8 +17,8 @@
 
 
 NSString *scopes = @"offline_access https://graph.microsoft.com/User.ReadBasic.All";
-NSString *authURL = @"https://login.microsoftonline.com/kidventus.com/oauth2/v2.0/authorize";
-NSString *loginURL = @"https://login.microsoftonline.com/kidventus.com/login";
+NSString *authURL = @"https://login.microsoftonline.com/common/oauth2/v2.0/authorize";
+NSString *loginURL = @"https://login.microsoftonline.com/common/login";
 NSString *bhh = @"urn:ietf:wg:oauth:2.0:oob?code=";
 NSString *tokenURL = @"https://login.microsoftonline.com/common/oauth2/v2.0/token";
 NSString *keychain = @"com.microsoft.azureactivedirectory.samples.graph.QuickStart";

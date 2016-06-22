@@ -103,9 +103,7 @@ bool loadedApplicationSettings;
         NSString *query = [NSString stringWithFormat:@"startswith(givenName, '%@')", searchString];
     
            [dictionary setValue:query forKey:@"$filter"];
-        // [dictionary setValue:@"openid" forKey:@"scope"];
-        // [dictionary setValue:UUID forKey:@"nonce"];
-        //  [dictionary setValue:@"query" forKey:@"response_mode"];
+
 
     
     return dictionary;

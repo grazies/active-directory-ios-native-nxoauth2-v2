@@ -7,7 +7,7 @@
 //
 
 #import "AppData.h"
-#import "NXOAuth2.h"
+#import "ADALiOS/ADAuthenticationResult.h"
 
 @implementation AppData
 

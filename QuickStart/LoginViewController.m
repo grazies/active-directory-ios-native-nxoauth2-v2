@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "NXOAuth2.h"
+
 #import "AppData.h"
 #import "MasterViewController.h"
 

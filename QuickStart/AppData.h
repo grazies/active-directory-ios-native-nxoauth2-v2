@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NXOAuth2.h"
+#import "ADALiOS/ADAuthenticationResult.h"
 
 
 @interface AppData : NSObject
 
-@property (strong) NXOAuth2Account *userItem;
+@property (strong) ADTokenCacheStoreItem *userItem;
 @property (strong) NSString* taskWebApiUrlString;
 @property (strong) NSString* authority;
 @property (strong) NSString* clientId;

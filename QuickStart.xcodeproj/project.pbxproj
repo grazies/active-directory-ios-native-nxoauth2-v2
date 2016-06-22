@@ -21,6 +21,7 @@
 		B8878C151B0FED8800BAFF6C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B8878C141B0FED8800BAFF6C /* User.m */; };
 		B9C3DEA7EE4D662C5581B867 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A311A42C3413097EBA882893 /* libPods.a */; };
 		FB923FFF1C7E98AF0058B0A8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB923FFE1C7E98AF0058B0A8 /* LoginViewController.m */; };
+		FB99EBD91D1B1F83007C8BBC /* graphAPICaller.m in Sources */ = {isa = PBXBuildFile; fileRef = FB99EBD81D1B1F83007C8BBC /* graphAPICaller.m */; };
 		FBE25AFB1C80C7040080AF1F /* NSURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE25AFA1C80C7040080AF1F /* NSURLResponse.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		FB923FFC1C7E93680058B0A8 /* QuickStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuickStart.entitlements; sourceTree = "<group>"; };
 		FB923FFD1C7E98AF0058B0A8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FB923FFE1C7E98AF0058B0A8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FB99EBD71D1B1F6C007C8BBC /* graphAPICaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphAPICaller.h; sourceTree = "<group>"; };
+		FB99EBD81D1B1F83007C8BBC /* graphAPICaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = graphAPICaller.m; sourceTree = "<group>"; };
 		FBE25AFA1C80C7040080AF1F /* NSURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,8 @@
 				FB923FFD1C7E98AF0058B0A8 /* LoginViewController.h */,
 				FB923FFE1C7E98AF0058B0A8 /* LoginViewController.m */,
 				FBE25AFA1C80C7040080AF1F /* NSURLResponse.m */,
+				FB99EBD71D1B1F6C007C8BBC /* graphAPICaller.h */,
+				FB99EBD81D1B1F83007C8BBC /* graphAPICaller.m */,
 			);
 			path = QuickStart;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				B85B43F91B0E5C45006CEFC8 /* AppDelegate.m in Sources */,
 				FBE25AFB1C80C7040080AF1F /* NSURLResponse.m in Sources */,
 				B815A6A81B1CED79005AC51D /* AppData.m in Sources */,
+				FB99EBD91D1B1F83007C8BBC /* graphAPICaller.m in Sources */,
 				B815A6B11B1D09E3005AC51D /* MasterViewController.m in Sources */,
 				B85B43F61B0E5C45006CEFC8 /* main.m in Sources */,
 				B85B43FF1B0E5C45006CEFC8 /* DetailViewController.m in Sources */,

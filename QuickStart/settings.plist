@@ -11,9 +11,9 @@
 	<key>redirectUri</key>
 	<string>urn:ietf:wg:oauth:2.0:oob</string>
 	<key>graphAPI</key>
-	<string>https://graph.microsoft.com/v1.0/me/</string>
+	<string>https://graph.microsoft.com/</string>
 	<key>api-version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>tenant</key>
 	<string>kidventus.com</string>
 	<key>secret</key>

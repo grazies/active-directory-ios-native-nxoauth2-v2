@@ -12,6 +12,7 @@
 #import "NXOAuth2.h"
 #import "AppData.h"
 #import "LoginViewController.h"
+#import "GraphAPICaller.h"
 
 @implementation MasterViewController
 
@@ -145,35 +146,35 @@
 if (searchText.length > 0) {
     
     
-    [self requestOAuth2ProtectedDetails];
+   // [self requestOAuth2ProtectedDetails];
         
     };
     
-//    NSString *graphURL = [NSString stringWithFormat:@"%@%@/users?api-version=%@&$filter=startswith(userPrincipalName, '%@')", data.taskWebApiUrlString, data.tenant, data.apiversion, searchString];
-//    
-//
-//       
-//        [GraphAPICaller searchUserList:searchText completionBlock:^(NSMutableArray* returnedUpns, NSError* error) {
-//            if (returnedUpns) {
-//                
-//                
-//                upnArray = returnedUpns;
-//                
-//                
-//            }
-//            else
-//            {
-//                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:nil message:[[NSString alloc]initWithFormat:@"Error : %@", error.localizedDescription] delegate:nil cancelButtonTitle:@"Retry" otherButtonTitles:@"Cancel", nil];
-//                
-//                [alertView setDelegate:self];
-//                
-//                dispatch_async(dispatch_get_main_queue(),^ {
-//                    [alertView show];
-//                });
-//            }
-//            
-//            
-//        }];
+    NSString *graphURL = [NSString stringWithFormat:@"%@%@/users?api-version=%@&$filter=startswith(userPrincipalName, '%@')", data.taskWebApiUrlString, data.tenant, data.apiversion, searchString];
+    
+
+    
+        [GraphAPICaller searchUserList:searchText completionBlock:^(NSMutableArray* returnedUpns, NSError* error) {
+            if (returnedUpns) {
+                
+                
+                upnArray = returnedUpns;
+                
+                
+            }
+            else
+            {
+                UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:nil message:[[NSString alloc]initWithFormat:@"Error : %@", error.localizedDescription] delegate:nil cancelButtonTitle:@"Retry" otherButtonTitles:@"Cancel", nil];
+                
+                [alertView setDelegate:self];
+                
+                dispatch_async(dispatch_get_main_queue(),^ {
+                    [alertView show];
+                });
+            }
+            
+            
+        }];
     
     
 } 

@@ -1,6 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
-link_with ['QuickStart']
-xcodeproj 'QuickStart'
+platform :ios, '8.0'
 
-pod 'ADALiOS', :git => 'https://github.com/AzureAD/azure-activedirectory-library-for-objc.git', :branch=> 'convergence'
+target 'QuickStart' do
+
 pod 'NXOAuth2Client'
+
+end

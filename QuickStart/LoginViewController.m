@@ -10,13 +10,14 @@
 
 #import "AppData.h"
 #import "MasterViewController.h"
+#import "NXOAuth2.h"
 
 
 @implementation LoginViewController
 
 
-NSString *scopes = @"offline_access https://outlook.office.com/Contacts.Read";
-NSString *authURL = @"https://login.microsoftonline.com/kidventus.com/oauth2/v2.0/authorize?response_mode=query&state=1224";
+NSString *scopes = @"offline_access https://graph.microsoft.com/User.ReadBasic.All";
+NSString *authURL = @"https://login.microsoftonline.com/kidventus.com/oauth2/v2.0/authorize";
 NSString *loginURL = @"https://login.microsoftonline.com/kidventus.com/login";
 NSString *bhh = @"urn:ietf:wg:oauth:2.0:oob?code=";
 NSString *tokenURL = @"https://login.microsoftonline.com/common/oauth2/v2.0/token";

@@ -35,15 +35,15 @@ An example for this QuickStart code would be: ***msquickstart://com.microsoft.az
 ## *2. Register the DirectorySearcher Application*
 To enable your app to get tokens, you'll first need to register it in your Azure AD tenant and grant it permission to access the Azure AD Graph API:
 
--	Sign into the Azure Management Portal
--	In the left hand nav, click on **Active Directory**
--	Select a tenant in which to register the application.
--	Click the **Applications** tab, and click **Add** in the bottom drawer.
--	Follow the prompts and create a new **Native Client Application**.
-    -	The **Name** of the application will describe your application to end-users
-    -	The **Redirect Uri** is a scheme and string combination that Azure AD will use to return token responses.  Enter a value specific to your application based on the information above.
--	Once you've completed registration, AAD will assign your app a unique client identifier.  You'll need this value in the next sections, so copy it from the **Configure** tab.
-- Also in **Configure** tab, locate the "Permissions to Other Applications" section.  For the "Azure Active Directory" application, add the **Access Your Organization's Directory** permission under **Delegated Permissions**.  This will enable your application to query the Graph API for users.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
+2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+3. Click on **Registered Applications** and choose **Add**.
+4. Enter a friendly name for the application, for example 'DirectorySearcher' and select 'Native' as the Application Type. The **Redirect Uri** is a scheme and string combination that Azure AD will use to return token responses.  Enter a value specific to your application based on the information above. Click on **Create** to create the application.
+5. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+6. Find the Application ID value and copy it to the clipboard.
+7. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and select 'Microsoft Graph' (this is the Graph API). Then, click on  **Select Permissions** and select 'Read Directory Data'.
+
 
 ## *3. Install & Configure ADAL*
 Now that you have an application in Azure AD, you can install ADAL and write your identity-related code.  In order for ADAL to be able to communicate with Azure AD, you need to provide it with some information about your app registration.
